@@ -1,31 +1,31 @@
-# Partie 1 - CrÃ©ation et population de la base de donnÃ©es
+# Partie 1 - Création et population de la base de données
 
-Avant de rÃ©aliser cette partie, il convient d'avoir visionnÃ© la vidÃ©o mise Ã  disposition dans l'espace de cours Moodle et accessible directement via cette URL :
+Avant de réaliser cette partie, il convient d'avoir visionné la vidéo mise à  disposition dans l'espace de cours Moodle et accessible directement via cette URL :
 https://youtu.be/aM2KBUfADak
 
-### 1. CrÃ©ation de l'utilisateur "myactivities-user" 
+### 1. Création de l'utilisateur "myactivities-user" 
 
-1.1. Ouvrez pgAdmin 4 et connectez vous Ã  votre serveur local en utilisant le user "postgres".
+1.1. Ouvrez pgAdmin 4 et connectez vous à  votre serveur local en utilisant le user "postgres".
 
-1.2. CrÃ©ez un nouvel utilisateur spÃ©cifiÃ© comme suit :
+1.2. Créez un nouvel utilisateur spécifié comme suit :
     
 - username : myactivities-user
 - mot de passe : 123456
 - attributs : LOGIN et CREATEDB
 
-### 2. CrÃ©ation de la base de donnÃ©es "myactivities-db"
+### 2. Création de la base de données "myactivities-db"
 
-2.1. DÃ©connectez-vous du serveur et reconnectez-vous au serveur en utilisant l'utilisateur "myactivities-user".
+2.1. Déconnectez-vous du serveur et reconnectez-vous au serveur en utilisant l'utilisateur "myactivities-user".
 
-2.2. CrÃ©ez une nouvelle base de donnÃ©es spÃ©cifiÃ©es comme suit :
+2.2. Créez une nouvelle base de données spécifiées comme suit :
 
 - name : myactivities-db
-- owner (propriÃ©taire) : myactivities-user
+- owner (propriétaire) : myactivities-user
 - encoding : UTF8
 
-### 3. CrÃ©ation et initialisation de la table "user"
+### 3. Création et initialisation de la table "user"
 
-En utilisant l'Ã©diteur de requÃªte "Query Tool" proposÃ© par pgAdmin, utilisez les instructions SQL ci-dessous pour crÃ©er  et initialiser le contenu de la  table "user".
+En utilisant l'éditeur de requête "Query Tool" proposé par pgAdmin, utilisez les instructions SQL ci-dessous pour créer  et initialiser le contenu de la  table "user".
 
     CREATE TABLE "user"
     (
@@ -39,27 +39,27 @@ En utilisant l'Ã©diteur de requÃªte "Query Tool" proposÃ© par pgAdmin, utilisez 
     INSERT INTO "user" VALUES (101,'Paul Durand', now());
     INSERT INTO "user" VALUES (102,'Jane Doe', now());
 
-> Les requÃªtes spÃ©cifiÃ©es dans la suite des activitÃ©s doivent Ãªtre exÃ©cutÃ©es et donc testÃ©es via le "Query Tool". Certaines requÃªtes nÃ©cessiteront l'insertion de nouvelles donnÃ©es pour Ãªtre testÃ©es. 
+> Les requêtes spécifiées dans la suite des activités doivent être exécutées et donc testées via le "Query Tool". Certaines requêtes nécessiteront l'insertion de nouvelles données pour être testées. 
 >
->Pour chaque requÃªte spÃ©cifiÃ©e, vous devez crÃ©er un nouveau fichier dont le nom sera spÃ©cifiÃ© pour chaque requÃªte. Vous devez ensuite complÃ©ter ce fichier avec la requÃªte que vous avez rÃ©digÃ©e et testÃ©e dans "Query Tool" ainsi qu'avec les instructions que vous aurez Ã  rÃ©diger et Ã  exÃ©cuter pour tester votre requÃªte. 
+>Pour chaque requête spécifiée, vous devez créer un nouveau fichier dont le nom sera spécifié pour chaque requête. Vous devez ensuite compléter ce fichier avec la requête que vous avez rédigée et testée dans "Query Tool" ainsi qu'avec les instructions que vous aurez à  rédiger et à  exécuter pour tester votre requête. 
 
-### 4. RequÃªtes simples sur la table "user"
+### 4. Requêtes simples sur la table "user"
 
-4.1. SÃ©lection des "vieux" "user"
+4.1. Sélection des "vieux" "user"
 
 - Nom de fichier :  
     
     P1-4-1-select-old-users.sql
 
-- Description de la requÃªte :
+- Description de la requête :
 
-    SÃ©lectionner le username et la date de crÃ©ation des utilisateurs crÃ©Ã©s avant le 1er septembre 2019 triÃ©s par ordre alphabÃ©tique sur les "username".
+    Sélectionner le username et la date de création des utilisateurs créés avant le 1er septembre 2019 triés par ordre alphabétique sur les "username".
 
 > fix #1 requete P1-4-1 sur user
 
-### 5. CrÃ©ation et initialisation de la table "activity"
+### 5. Création et initialisation de la table "activity"
 
-En utilisant l'Ã©diteur de requÃªte "Query Tool" proposÃ© par pgAdmin, utilisez les instructions SQL ci-dessous pour crÃ©er  et initialiser le contenu de la  table "activity".
+En utilisant l'éditeur de requête "Query Tool" proposé par pgAdmin, utilisez les instructions SQL ci-dessous pour créer  et initialiser le contenu de la  table "activity".
 
     CREATE TABLE activity
     (
@@ -76,20 +76,20 @@ En utilisant l'Ã©diteur de requÃªte "Query Tool" proposÃ© par pgAdmin, utilisez 
     );
 
 
-    INSERT INTO public.activity VALUES (1, 'Tennis de table', 'ActivitÃ© loisir tennis de table', '2019-01-21 11:30:00', '2019-01-21 11:30:00', 101);
-    INSERT INTO public.activity VALUES (2, 'ThÃ©atre', 'Club de thÃ©Ã¢tre amateur', '2019-01-21 11:30:00', '2019-01-21 11:30:00');
-    INSERT INTO public.activity VALUES (3, 'Musique funk', 'Groupe de musique amateur passionnÃ© de jazz fusion funk.', '2019-01-21 11:30:00', '2019-01-21 11:30:00');
+    INSERT INTO public.activity VALUES (1, 'Tennis de table', 'Activité loisir tennis de table', '2019-01-21 11:30:00', '2019-01-21 11:30:00', 101);
+    INSERT INTO public.activity VALUES (2, 'Théatre', 'Club de théà¢tre amateur', '2019-01-21 11:30:00', '2019-01-21 11:30:00');
+    INSERT INTO public.activity VALUES (3, 'Musique funk', 'Groupe de musique amateur passionné de jazz fusion funk.', '2019-01-21 11:30:00', '2019-01-21 11:30:00');
     INSERT INTO public.activity VALUES (4, 'Football', 'Club de foot pour tous les ages', '2019-01-21 11:30:00', '2019-01-21 11:30:51.00', 102);
 
-5.1. SÃ©lection des activitÃ©s et de leur propriÃ©taires 
+5.1. Sélection des activités et de leur propriétaires 
 
 - Nom de fichier :  
     
     P1-5-1-select-all-activities.sql
 
-- Description de la requÃªte :
+- Description de la requête :
 
-    SÃ©lectionner le "title", la description et le "username" du propriÃ©taire de toutes les activitÃ©s crÃ©Ã©es aprÃ¨s le 1er septembre 2019 triÃ©s par ordre alphabÃ©tique sur les "title" puis sur les "username".
-    Si une activitÃ© n'est attachÃ©e Ã  aucun propriÃ©taire, la ligne correspondante doit s'afficher quand mÃªme avec le champ "username" laissÃ© vide. 
+    Sélectionner le "title", la description et le "username" du propriétaire de toutes les activités créées aprà¨s le 1er septembre 2019 triés par ordre alphabétique sur les "title" puis sur les "username".
+    Si une activité n'est attachée à  aucun propriétaire, la ligne correspondante doit s'afficher quand même avec le champ "username" laissé vide. 
 
 > fix #2 requete P1-5.1 sur activity
