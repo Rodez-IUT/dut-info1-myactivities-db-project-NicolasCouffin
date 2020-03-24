@@ -1,33 +1,33 @@
-# DUT Info 1 > Programmation Bases de DonnÃ©es
+# DUT Info 1 > Programmation Bases de Données
 
-### NOM : DOE
-### PrÃ©nom : John
+### NOM : COUFFIN
+### Prénom : Nicolas
 ### Groupe de TP/TD : 
 - [x] 1
 - [ ] 2
 - [ ] 3
 
-### 0. CrÃ©ation et initialisation du projet "myactivities-db-project"
+### 0. Création et initialisation du projet "myactivities-db-project"
 
-CrÃ©ez un compte sur la plateforme Github si ce n'est pas dÃ©jÃ  fait.  
-VÃ©rifiez votre configuration Git locale en utilisant dans un terminal "Git Bash" la commande suivante :
+Créez un compte sur la plateforme Github si ce n'est pas déjà  fait.  
+Vérifiez votre configuration Git locale en utilisant dans un terminal "Git Bash" la commande suivante :
     
     git config --global -l
 
-Si votre user.name et user.email ne sont pas renseignÃ©s, configurez votre environnement Git avant de poursuivre les activitÃ©s proposÃ©es. 
-Rappel pour configurer Git lors dâ€™un premier usage sur une machine de travail :
+Si votre user.name et user.email ne sont pas renseignés, configurez votre environnement Git avant de poursuivre les activités proposées. 
+Rappel pour configurer Git lors d'un premier usage sur une machine de travail :
 
     git config --global user.name "Your Username"
     git config --global user.email "Your email"
 
-- CrÃ©ez votre projet sur Github en vous inscrivant au devoir indiquÃ© par votre enseignant.  
-- Clonez dans lâ€™espace de travail de votre choix le projet Github gÃ©nÃ©rÃ© pour vous par Github Classroom.  
-Importez/ouvrez votre projet local dans l'Ã©diteur de votre choix. [Visual Studio Code &copy;](https://code.visualstudio.com/) peut Ãªtre une bonne option.  
-- Modifiez le fichier README pour quâ€™il contienne vos nom et prÃ©nom en place des donnÃ©es exemples. SÃ©lectionnez le numÃ©ro correspondant Ã  votre groupe de TP/TD.
-Commitez et pushez  dans votre dÃ©pÃ´t distant en utilisant le message de commit suivant :
+- Créez votre projet sur Github en vous inscrivant au devoir indiqué par votre enseignant.  
+- Clonez dans l'espace de travail de votre choix le projet Github généré pour vous par Github Classroom.  
+Importez/ouvrez votre projet local dans l'éditeur de votre choix. [Visual Studio Code &copy;](https://code.visualstudio.com/) peut être une bonne option.  
+- Modifiez le fichier README pour qu'il contienne vos nom et prénom en place des données exemples. Sélectionnez le numéro correspondant à  votre groupe de TP/TD.
+Commitez et pushez  dans votre dépôt distant en utilisant le message de commit suivant :
 
-> fix #0 ActivitÃ© prÃ©liminaire terminÃ©e
+> fix #0 Activité préliminaire terminée
 
-Dans la suite des activitÃ©s, Ã  chaque fois que vous trouverez un Ã©noncÃ© commenÃ§ant par â€œfix #...â€, vous devez committer et pusher les modifications sur votre dÃ©pÃ´t distant en utilisant comme message de commit cet Ã©noncÃ©.
+Dans la suite des activités, à  chaque fois que vous trouverez un énoncé commençant par "fix #...", vous devez committer et pusher les modifications sur votre dépôt distant en utilisant comme message de commit cet énoncé.
 
-Les corrections des activitÃ©s suivantes seront transmises au fil de lâ€™eau ; elles seront disponibles dans les diffÃ©rentes branches du projet Github indiquÃ© dans l'espace Moodle du module. 
+Les corrections des activités suivantes seront transmises au fil de l'eau ; elles seront disponibles dans les différentes branches du projet Github indiqué dans l'espace Moodle du module. 
